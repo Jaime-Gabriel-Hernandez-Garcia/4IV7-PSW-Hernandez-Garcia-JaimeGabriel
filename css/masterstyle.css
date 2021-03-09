@@ -1,11 +1,11 @@
 *{
     padding: 0;
     margin: 0;
-    color: #123;
+    color: rgb(242, 246, 250);
     text-align: center;
 }
 
-html,body{
+html, body{
     background-color: white;
 }
 
