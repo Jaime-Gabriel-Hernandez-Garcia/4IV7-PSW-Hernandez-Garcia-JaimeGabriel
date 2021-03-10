@@ -5,11 +5,11 @@
     text-align: center;
 }
 
-html, body{
+html, body {
     background-color: white;
 }
 
-.main-container{
+.main-container {
     border: 4px solid rgb(255,122,0);
     border-radius: 20px;
     margin: 2rem;

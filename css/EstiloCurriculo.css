@@ -1,0 +1,45 @@
+*{
+    padding : 0;
+    margin : 2px;
+    color: rgb(247, 242, 242);
+    text-align: center; 
+}
+
+html, body {
+    background-color : rgb(243, 226, 228);
+}
+
+.main-containercurriculo{
+    border: 4px;
+    border-radius: 20px;
+    margin: .2rem;
+    background-color: rgb(174, 177, 190);
+}
+
+nav{
+    border: 2px solid rgb(161, 172, 168);
+    margin: 5rem;
+    border-radius: 10px;
+    padding: 2rem;    
+    width: 80%;
+    
+}
+
+section, footer, article, aside{
+    border: 2px solid rgb(161, 172, 168);
+    margin: 5rem;
+    border-radius: 10px;
+    padding: 2rem;   
+    display: inline-block; 
+}
+
+article, aside{
+    width: 40%;
+    display: inline-block;
+    height: 30px;
+    background-color: rgb(207, 228, 194);  
+}
+
+nav, section,footer{
+    background-color: rgb(224, 201, 219);
+}
