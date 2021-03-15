@@ -14,7 +14,7 @@ html, body {
     margin: 2rem;
 }
 
-nav, section, footer, article, aside{
+nav, section, article, aside{
     margin: 5rem;
     border-radius: 10px;
     padding: 5rem;
