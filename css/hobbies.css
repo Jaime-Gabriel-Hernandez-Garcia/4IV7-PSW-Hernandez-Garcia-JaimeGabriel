@@ -1,0 +1,109 @@
+/*
+.fond{
+    position: absolute;
+    padding-top:85px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+}
+*/
+
+.HoverHobbies{
+    display: inline-block;
+    border: 0;
+    position: relative;
+    -webkit-transition: all 100ms ease-out;
+    -webkit-transform: scale(1);
+    -ms-transition: all 100ms ease-out;
+    -ms-transform: scale(1);
+    -moz-transition: all 100ms ease-out;
+    -moz-transform: scale(1);
+    margin-top: 10rem;
+}
+
+.HoverHobbies:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 100ms ease-out;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 100ms ease-out;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 100ms ease-out;
+    -moz-transform: scale(1.5);
+}
+
+
+footer{
+    padding: 4rem;
+    font-size:x-large;
+    background-color: cornflowerblue;
+    border-radius: 2rem;
+    margin-top: 28rem;
+
+}
+
+nav{
+    background-color: lightblue;
+    font: arial;
+    font-size: x-large;
+    padding: 4rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+article{
+    margin-top: 2rem;
+    text-align: center;
+    background-color: grey;
+    padding: 2rem;
+    margin-left: 28rem;
+    margin-right: 28rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-left: 5rem;
+  }
+  
+  .c1, .c2, .c3 {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .c1 {
+      width: 60%;
+      -webkit-order: 2;
+      order: 2;
+    }
+  
+    .c2 {
+      width: 40%;
+      -webkit-order: 1;
+      order: 1;
+    }
+  
+    .c3 {
+      width: 100%;
+      -webkit-order: 3;
+      order: 3;
+    }
+  }
+  
+  
+  @media (min-width: 800px) {
+    .c2 {
+      width: 20%;
+    }
+  
+    .c3 {
+      width: 20%;
+    }
+  }
