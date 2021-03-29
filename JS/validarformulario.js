@@ -35,7 +35,7 @@ function validar(formulario){
         formulario.edad.focus();
         break;
     }
-
+     
     var checkOK = "123456789";
 
     var checkStr = formulario.edad.value;
