@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 1</title>
-    <link rel="stylesheet" href="./CSS/problema.css">
-    <script src="./JS/problema01.js" ></script>
+    <title>Problema 07</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./JS/problema07.js"></script>
 </head>
 <body>
 
     <nav style="text-align: center;">
-        PROBLEMA 01
+        PROBLEMA 07 
     </nav>
 
     <p><strong>
-        Se desea programar un formulario el cual sea capaz 
-        de calcular el interes al 2% mensual, sobre un capital
-        a invertir.
+        Introducir 2 numeros si son iguales que 
+        los multiplique, si uno es mayor que los reste y 
+        si uno es menor que los sume.
     </strong></p>
-    <form name="formulario" method="get" action="problema01.html">
+
+    <form name="formulario" method="get" action="problema07.html">
         <table align="center" border="1";" >
             <tr>
-                <td class="td_up" >Introduce la cantidad a invertir : $</td>
-                <td class="td_down" > <input type="text" name="cantidad"
+                <td class="td_up" >Introduce los 2 numeros: </td>
+                <td class="td_down" > <input type="text" name="numero1"
+                onkeypress="return validarn(event)"> </td>
+                <td class="td_down" > <input type="text" name="numero2"
                 onkeypress="return validarn(event)"> </td>
             </tr>
             <tr>
                 <td></td>
-                <td class="td_down"> <input type="button" value="Interes"
-                    name="enviar" onclick="interes()"> </td>
+                <td class="td_down"> <input type="button" value="calculo"
+                    name="enviar" onclick="calcularNumeros()"> </td>
             </tr>
             <tr>
-                <td class="td_up" >Su saldo total con interés del 2% mensual es de:</td>
-                <td class="td_down"> <input type="text" name="sueldoti"
-                    id="cantidadti" readonly="readonly" 
+                <td class="td_up" >El calculo realizado es:</td>
+                <td class="td_down"> <input type="text" name="calculoRes"
+                    id="cantidad" readonly="readonly" 
                     class="input_text"> </td>
             </tr>
             <tr>
@@ -44,17 +47,17 @@
             </tr>
         </table>
     </form>
-    
+
     <br>
     <br>
     <br>
     <br>
     <a href="menuProblemas.html">Regresar al Menú Principal </a>
-    
+
     <footer>
         Creado por: Hernández García Jaime Gabriel <br>
         Contacto: 55-1622-4404 
     </footer>
-
+  
 </body>
 </html>

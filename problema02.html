@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./Js/problema02.js"></script>
+</head>
+<body>
+
+    <nav style="text-align: center;">
+        PROBLEMA 02
+    </nav>
+
+    <p><strong>
+        Se desea un forlmulario que ayude saber el sueldo base 
+        mas el 10% de todas las comisines de las ventas que 
+        hizo, las ventas seran 3 por mes.
+    </strong></p>
+
+    
+    <form name="formulario" method="get" action="problema02.html">
+        <table align="center" border="1"; style="border-radius: 20px;" >
+            <tr>
+                <td class="td_up" >
+                    Introduce la cantidad de tu sueldo base: $
+                </td>
+                <td class="td_down" > 
+                <input type="text" name="cantidadBase"
+                onkeypress="return validarn(event)"> 
+            </td>
+            </tr>
+
+            <tr>
+                <td class="td_up" >Introduce la cantidad de la primera venta de la que obtendras el 10%: $</td>
+                <td class="td_down" > 
+                <input type="text" name="cantidadVenta01"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+
+            <tr>
+                <td class="td_up" >Introduce la cantidad de la segunda venta de la que obtendras el 10%: $</td>
+                <td class="td_down" > 
+                <input type="text" name="cantidadVenta02"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+
+            <tr>
+                <td class="td_up" >Introduce la cantidad de la tercera venta de la que obtendras el 10%: $</td>
+                <td class="td_down" > 
+                <input type="text" name="cantidadVenta03"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Total"
+                    name="enviar" onclick="TotalGanado()"> </td>
+            </tr>
+
+            <tr>
+                <td class="td_up" >Su sueldo total ganado: </td>
+                <td class="td_down"> <input type="text" name="Total"
+                    id="total" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="menuProblemas.html">Regresar al Menú Principal </a>
+
+    <footer>
+        Creado por: Hernández García Jaime Gabriel <br>
+        Contacto: 55-1622-4404 
+    </footer>   
+
+</body>
+</html>

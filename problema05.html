@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 05</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./JS/problema05.js"></script>
+</head>
+<body>
+
+    <nav style="text-align: center;">
+        PROBLEMA 05 
+    </nav>
+
+    <p><strong>
+        Porcentaje de hombres y mujeres que hay 
+        en un grupo de estudiantes
+    </strong></p>
+
+    <form name="formulario" method="get" action="problema05.html">
+        <table align="center" border="1";" >
+            <tr>
+                <td class="td_up" >Introduce la cantidad de alumnos que hay en el grupo: </td>
+                <td class="td_down" > <input type="text" name="cantidadAlumnos"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduce la cantidad de mujeres que hay que hay en el grupo: </td>
+                <td class="td_down" > <input type="text" name="cantidadHombres"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduce la cantidad de hombres que hay que hay en el grupo: </td>
+                <td class="td_down" > <input type="text" name="cantidadMujeres"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Total"
+                    name="enviar" onclick="porcentajeSexos()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El porcentaje de hombres que hay en el grupo es:</td>
+                <td class="td_down"> <input type="text" name="porcentajeHomb"
+                    id="cantidad" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El porcentaje de mujeres que hay en el grupo es:</td>
+                <td class="td_down"> <input type="text" name="porcentajeMuj"
+                    id="cantidad" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="menuProblemas.html">Regresar al Menú Principal </a>
+
+    <footer>
+        Creado por: Hernández García Jaime Gabriel <br>
+        Contacto: 55-1622-4404 
+    </footer>
+    
+</body>
+</html>

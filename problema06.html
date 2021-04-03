@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 1</title>
-    <link rel="stylesheet" href="./CSS/problema.css">
-    <script src="./JS/problema01.js" ></script>
+    <title>Problema 06</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./JS/problema06.js"></script>
 </head>
 <body>
 
     <nav style="text-align: center;">
-        PROBLEMA 01
+        PROBLEMA 06
     </nav>
 
     <p><strong>
-        Se desea programar un formulario el cual sea capaz 
-        de calcular el interes al 2% mensual, sobre un capital
-        a invertir.
+        Algoritmo que calule tu edad
     </strong></p>
-    <form name="formulario" method="get" action="problema01.html">
+
+    <form name="formulario" method="get" action="problema06.html">
         <table align="center" border="1";" >
             <tr>
-                <td class="td_up" >Introduce la cantidad a invertir : $</td>
-                <td class="td_down" > <input type="text" name="cantidad"
+                <td class="td_up" >Introduce el año en el que te encuentras:</td>
+                <td class="td_down" > <input type="text" name="añoNacer"
+                onkeypress="return validarn(event)"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduce el año en el que naciste:</td>
+                <td class="td_down" > <input type="text" name="añoActual"
                 onkeypress="return validarn(event)"> </td>
             </tr>
             <tr>
                 <td></td>
-                <td class="td_down"> <input type="button" value="Interes"
-                    name="enviar" onclick="interes()"> </td>
+                <td class="td_down"> <input type="button" value="Edad"
+                    name="enviar" onclick="calculoEdad()"> </td>
             </tr>
             <tr>
-                <td class="td_up" >Su saldo total con interés del 2% mensual es de:</td>
-                <td class="td_down"> <input type="text" name="sueldoti"
-                    id="cantidadti" readonly="readonly" 
+                <td class="td_up" >La edad es:</td>
+                <td class="td_down"> <input type="text" name="EdadTotal"
+                    id="cantidad" readonly="readonly" 
                     class="input_text"> </td>
             </tr>
             <tr>
@@ -44,17 +48,17 @@
             </tr>
         </table>
     </form>
-    
+
     <br>
     <br>
     <br>
     <br>
     <a href="menuProblemas.html">Regresar al Menú Principal </a>
-    
+
     <footer>
         Creado por: Hernández García Jaime Gabriel <br>
         Contacto: 55-1622-4404 
     </footer>
-
+    
 </body>
 </html>

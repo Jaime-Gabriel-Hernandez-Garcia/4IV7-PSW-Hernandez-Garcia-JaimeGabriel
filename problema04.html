@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./JS/problema04.js"></script>
+</head>
+<body>
+
+    <nav style="text-align: center;">
+        PROBLEMA 04
+    </nav>
+
+    <p><strong>
+        Un aluno deseea saber su calificion. <br>
+        55% 3 parciales <br>
+        30% examen <br>
+        15% trabajo final <br>
+    </strong></p>
+
+    <form name="formulario" method="get" action="problema04.html">
+        <table align="center" border="1"; style="border-radius: 20px;" >
+            <tr>
+                <td class="td_up" >
+                    Introduce las 3 calificaciones de cada parcial respectivamente: 
+                </td>
+                <td class="td_down" > 
+                <input type="text" name="calificacion1"
+                onkeypress="return validarn(event)"> 
+                </td>
+
+                </td>
+                <td class="td_down" > 
+                <input type="text" name="calificacion2"
+                onkeypress="return validarn(event)"> 
+                </td>
+
+                </td>
+                <td class="td_down" > 
+                <input type="text" name="calificacion3"
+                onkeypress="return validarn(event)"> 
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td class="td_up" >
+                    Introduce la calificacion del examen: 
+                </td>
+                <td class="td_down" > 
+                <input type="text" name="calificacionExamen"
+                onkeypress="return validarn(event)"> 
+                </td>
+  
+            </tr>
+
+                        
+            <tr>
+
+                <td class="td_up" >
+                    Introduce la calificacion del proyecto: 
+                </td>
+                <td class="td_down" > 
+                <input type="text" name="calificacionProyecto"
+                onkeypress="return validarn(event)"> 
+                </td>
+
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Total"
+                    name="enviar" onclick="TotalCalificacion()"> </td>
+            </tr>
+
+            
+            <tr>
+
+                <td class="td_up" >Su porcentaje obtenido de las calificaciones es:</td>
+                <td class="td_down"> <input type="text" name="porCalif"
+                    id="cantidad" readonly="readonly" 
+                    class="input_text"> </td>
+                
+            </tr>
+
+            <tr>
+
+                <td class="td_up" >Su porcentaje obtenido de el examen es: </td>
+                <td class="td_down"> <input type="text" name="porcExam"
+                    id="cantidad" readonly="readonly" 
+                    class="input_text"> </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="td_up" >Su porcentaje obtenido de el proyecto es: </td>
+                <td class="td_down"> <input type="text" name="porcProy"
+                    id="cantidad" readonly="readonly" 
+                    class="input_text"> </td>
+
+            </tr>
+
+
+            
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="menuProblemas.html">Regresar al Menú Principal </a>
+
+    <footer>
+        Creado por: Hernández García Jaime Gabriel <br>
+        Contacto: 55-1622-4404 
+    </footer>
+
+</body>
+</html>
