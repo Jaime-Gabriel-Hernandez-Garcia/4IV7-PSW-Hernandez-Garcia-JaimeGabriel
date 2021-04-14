@@ -1,0 +1,96 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+
+h3, h4{
+    color: black;
+}
+
+.container{
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.problema-container{
+    background-color: aquamarine;
+    padding: 1rem;
+    box-sizing: 0 1px 3px rgb(01, 20, 30)
+                0 1px 3px rgb(01, 20, 30);
+}
+
+.problema-tittle{
+    color: black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid blanchedalmond;
+}
+
+.problema-input{
+    padding: 1rem;
+    color: black;
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid blue;
+}
+
+.problema-content{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+input.problema-input{
+    padding: 1rem;
+    color: black;
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid blue;
+}
+
+button.problema-button{
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.8rem;
+    box-shadow: 0 1px 3px rgb(0, 0,0, 0.12),  0 1px 3px rgba(62, 180, 180, 0.12),;
+}
+
+.problema-output{
+    width: 70%;
+    color: rgb(0, 100,30,);
+    font-family: 'monoscape';
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    padding: 1 rem;
+    margin-top: 1rem;
+}
+
+table.problema-table{
+    margin: 1rem;
+    border: 1px solid rgb(100, 200, 10,);
+}
+
+td{
+    border-bottom: 1px solid #444;
+}
+
